@@ -3,11 +3,12 @@
     "description": "",
     "version": "0.0.1",
     "manifest_version": 3,
-    "action": {
+    "browser_action": {
         "default_popup": "popup.html",
         "default_icon": "./Data/Image/logo.png"
     },
     "icons": {
         "128": "./Data/Image/logo.png"
-    }
+    },
+    "permissions": ["activeTab"]
 }
