@@ -1,30 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <!-- Meta -->
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <!-- Meta  -->
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <!-- CSS -->
-    <link rel="stylesheet" href="./src/style.css">
+    <!-- Styles -->
+    <link rel="stylesheet" href="./src/style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css"
+      rel="stylesheet"
+    />
 
-    <!-- Title -->
+    <!-- Title  -->
     <title>This or That</title>
-</head>
-<body>
-    <h1>This or That</h1>
-    <div class="container">
-        
+  </head>
+  <body>
+    <div class="popup_container">
+      <header>
+        <h1>This or That</h1>
+        <button id="close" class="close_btn">
+          <span class="cross">X</span>
+          <spna class="cross_text">Close</spna>
+        </button>
+      </header>
 
-        <button id="b1" onclick="button1_function()">This</button>
-        <h2>or</h2>
-        <button id="b2" onclick="button2_function()">That</button>
+      <div class="content">
+        <div class="question">
+          <h2>What will you choose?</h2>
+        </div>
+        <div class="options">
+          <button id="this_btn">
+            <span id="this_btn_value">This</span>
+          </button>
+          <button id="that_btn">
+            <span id="that_btn_value">That</span>
+          </button>
+        </div>
+      </div>
+
+      <footer>
+        <a href="https://github.com/bhanu1031/thisorthat" target="_blank"
+          ><i class="bi bi-github"></i
+        ></a>
+        <small>created by Bhanu<sup>&copy;</sup></small>
+      </footer>
     </div>
-    
 
-    <!-- Js Scripts -->
-    <script src="./Data/Js/this_or_that.js"></script>
-    <script src="./src/script.js"></script>
-</body>
+    <!-- Scripts -->
+    <script src="./src/index.js"></script>
+    <script src="./assets/this_that.js"></script>
+  </body>
 </html>
